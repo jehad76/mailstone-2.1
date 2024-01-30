@@ -114,25 +114,80 @@ main {
     margin-top: 50px;
     display: flex;
 }
+.team-section
+.team-section-title{
+    border-left: 5px solid #FF900E;
+    padding: 20px;
+}
+.team-section-title {
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+
+}
+
 
 .card-container {
     border-radius: 8px;
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
-    width: 300px;
+    width: 450px;
     height: 171px;
+    margin-right: 20px;
 }
 
-.team-section-image {
+/* .team-section-main {
+    width: 586px;
+    height: 171px;
+} */
+
+.team-section-image img {
     border-radius: 8px;
-    width: 80%;
+    width: 90%;
     height: 982px;
+}
+
+.teen-yaers-badg {
+    border-radius: 8px;
+    background: #FF900E;
+    text-align: center;
+    width: 344px;
+    height: 200px;
+    padding: 20px;
+    position: relative;
+    bottom: 110px;
+    right: 20px
+}
+
+.teen-yaers-badg h2 {
+    color: #FFF;
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.teen-yaers-badg p {
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 20px;
 }
 
 h2 {
     color: #131313;
     font-size: 45px;
     font-weight: 700;
+}
+
+.peragrap-section-title {
+    width: 420px;
+    color: var(--Dark-03, #727272);
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
 }
 
 .paragrap-description {
@@ -218,12 +273,12 @@ h4 {
     margin: 70px auto;
 }
 
-.footer-description {
+.footer-section .footer-description {
     color: #424242;
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 400;
-    margin-top: 4px;
+    padding-top: 0.5px;
 }
 
 @media screen and (max-width: 576px) {
@@ -232,13 +287,34 @@ h4 {
 
     }
 
+    .card-container {
+        flex-direction: column;
+        width: 200px;
+    }
+
     nav,
     .features,
+    .team-section,
     .facts-card-container,
     .sponsor-section,
-    .sponsor-image {
+    .sponsor-image{
         flex-direction: column;
     }
+    .team-section-image img{
+        width: 100%;
+    }
+    .card-container{
+        width: 90%;
+        margin-right: 0;
+    }
+    .of-our-quick-list{
+        margin-left: 0;
+        padding-right: 0;
+    }
+    .peragrap-section-title{
+        width: 250px;
+    }
+
 
     .sponsor-image {
         align-items: center;
